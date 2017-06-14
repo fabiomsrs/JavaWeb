@@ -29,19 +29,22 @@ public class CadastroLancamentoBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Lancamento lancamento = new Lancamento();
-	private List<Pessoa> Todaspessoas;
+	private List<Pessoa> todasPessoas;
 	
 	public Lancamento getLancamento() {
 		return lancamento;
 	}
 	public void setLancamento(Lancamento lancamento) {
 		this.lancamento = lancamento;
-	}
-	public List<Pessoa> getTodaspessoas() {
-		return Todaspessoas;
-	}
+	}	
 	
-	public TipoLancamento[] getTiposLancamentos(){
+	public List<Pessoa> getTodasPessoas() {		
+		return todasPessoas;
+	}
+	public void setTodasPessoas(List<Pessoa> todasPessoas) {
+		this.todasPessoas = todasPessoas;
+	}
+	public TipoLancamento[] getTiposLancamentos(){		
 		return TipoLancamento.values();
 	}
 	
@@ -49,7 +52,7 @@ public class CadastroLancamentoBean implements Serializable {
 		EntityManager manager = JpaUtil.getEntityManager();
 		try{
 			PessoaRepository pessoas = new PessoaRepository(manager);
-			this.Todaspessoas = pessoas.todas();
+			this.todasPessoas = pessoas.todas();
 		}finally{
 			manager.close();
 		}		

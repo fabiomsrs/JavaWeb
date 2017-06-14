@@ -9,9 +9,12 @@
 <managed-bean-class>managedBean.ConsultaLancamentosBean</managed-bean-class>
 <managed-bean-scope>view</managed-bean-scope>
 </managed-bean>
+
 <managed-bean>
-<managed-bean-name>NomesBean</managed-bean-name>
-<managed-bean-class>managedBean.NomesBean</managed-bean-class>
+<managed-bean-name>cadastroLancamento</managed-bean-name>
+<managed-bean-class>managedBean.CadastroLancamentoBean</managed-bean-class>
 <managed-bean-scope>view</managed-bean-scope>
 </managed-bean>
+
+
 </faces-config>
