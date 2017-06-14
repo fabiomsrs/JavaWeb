@@ -8,6 +8,14 @@ xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <title>:-)</title>
 </h:head>
 <h:body>
-	<h:outputText value = "Ola"/>
+	<h:form id = "frm">
+	
+	<h:inputText value = "#{meuNome.nome}">
+		<f:ajax render = "aff" event="keyup"/>
+	</h:inputText>
+	<br/>
+	
+	<h:outputText value = "Ola #{meuNome.nome}" id = "aff"/>
+	</h:form>
 </h:body>
 </html>

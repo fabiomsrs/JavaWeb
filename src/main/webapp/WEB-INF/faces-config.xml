@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
     version="2.2">
 	<managed-bean>
-	<managed-bean-name>MeuNome</managed-bean-name>
+	<managed-bean-name>meuNome</managed-bean-name>
 	<managed-bean-class>managedBean.MeuNome</managed-bean-class>
 	<managed-bean-scope>view</managed-bean-scope>
 	</managed-bean>

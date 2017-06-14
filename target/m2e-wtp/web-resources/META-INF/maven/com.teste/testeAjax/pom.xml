@@ -9,11 +9,6 @@
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
     	<groupId>javax.servlet</groupId>
     	<artifactId>javax.servlet-api</artifactId>
     </dependency>
@@ -53,17 +48,20 @@
     	<groupId>org.primefaces</groupId>
     	<artifactId>primefaces</artifactId>
     </dependency>
+    <dependency>
+    	<groupId>junit</groupId>
+    	<artifactId>junit</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>javax.enterprise</groupId>
+    	<artifactId>cdi-api</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <finalName>testeAjax</finalName>
   </build>
   <dependencyManagement>
   	<dependencies>
-  		<dependency>
-  			<groupId>junit</groupId>
-  			<artifactId>junit</artifactId>
-  			<version>3.8.1</version>
-  		</dependency>
   		<dependency>
   			<groupId>javax.servlet</groupId>
   			<artifactId>javax.servlet-api</artifactId>
@@ -113,6 +111,16 @@
   			<groupId>org.primefaces</groupId>
   			<artifactId>primefaces</artifactId>
   			<version>4.0</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>junit</groupId>
+  			<artifactId>junit</artifactId>
+  			<version>3.8.2</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>javax.enterprise</groupId>
+  			<artifactId>cdi-api</artifactId>
+  			<version>1.2</version>
   		</dependency>
   	</dependencies>
   </dependencyManagement>

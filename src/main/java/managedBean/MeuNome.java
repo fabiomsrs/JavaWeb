@@ -6,14 +6,14 @@ import javax.faces.bean.ViewScoped;
 @ManagedBean
 @ViewScoped
 public class MeuNome {
-	private String meuNome;
+	private String nome;
 
-	public String getMeuNome() {
-		return meuNome;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setMeuNome(String meuNome) {
-		this.meuNome = meuNome;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 }
