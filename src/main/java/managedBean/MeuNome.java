@@ -16,4 +16,8 @@ public class MeuNome {
 		this.nome = nome;
 	}
 	
+	public void transformar(){
+		this.nome = this.nome.toUpperCase();
+	}
+	
 }

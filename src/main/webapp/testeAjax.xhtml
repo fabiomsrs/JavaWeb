@@ -10,12 +10,13 @@ xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <h:body>
 	<h:form id = "frm">
 	
-	<h:inputText value = "#{meuNome.nome}">
-		<f:ajax render = "aff" event="keyup"/>
+	<h:inputText id = "text" value = "#{meuNome.nome}">		
 	</h:inputText>
-	<br/>
-	
+	<br/>	
 	<h:outputText value = "Ola #{meuNome.nome}" id = "aff"/>
+	<h:commandButton value = "button">
+		<f:ajax render = "aff" execute="text"/>
+	</h:commandButton>
 	</h:form>
 </h:body>
 </html>
