@@ -55,7 +55,7 @@ public class Lancamento {
 	}
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
-	}
+	}	
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)
 	public TipoLancamento getTipo() {
